@@ -1,9 +1,9 @@
 # idkwhattoputhere
-#Header 1
-##Header 2
+# Header 1
+## Header 2
 
 :moyai:
 
-[] amongus
-[x] sus!
+-[ ] amongus
+-[x] sus!
 
