@@ -166,8 +166,10 @@ main{
 }
 
 .album:last-child {
-  border-bottom: none; /* Remove bottom border from the last album */
+  border-bottom: none;
 }
+
+/* mobile */
 
 @media screen and (max-width: 800px) {
   main{
@@ -220,6 +222,8 @@ main{
     font-size: 15px;
   }
 }
+
+/* others */
 
 .footer {
   width: 100%;

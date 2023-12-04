@@ -89,6 +89,8 @@ main{
     justify-content: space-between;
   }
 
+  /* videos */
+
 .vidcontainer {
   display: flex;
   flex-direction: column;
@@ -138,6 +140,8 @@ iframe {
   background-color: rgb(228, 228, 228);
   font-size: 15px;
 }
+
+/* mobile */
 
 @media screen and (max-width: 800px) {
   main{

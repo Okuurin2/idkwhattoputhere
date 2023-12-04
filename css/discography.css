@@ -82,6 +82,8 @@ main{
   margin: 0 20px
 }
 
+/* mobile */
+
 @media screen and (max-width: 800px) {
   .image{
     width: 150px;

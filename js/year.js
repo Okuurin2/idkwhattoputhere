@@ -34,7 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const albumDiv = document.createElement("div");
         albumDiv.classList.add("album");
 
-        if (album.year !== currdate) {
+        
+        if (album.year !== currdate) {     // Create year seperation
           currdate = album.year
           container = document.createElement("div");
           container.classList.add("album_container");
@@ -101,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
       displayAlbums(newfilteredAlbums);
     }
   
-    // Event listener for the filter button
+    // Event listener for the filters
     yearFilter.addEventListener("change", function () {
       filter(yearFilter.value,typeFilter.value);
     });
