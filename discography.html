@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>暁Records</title>
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/nav.css" rel="stylesheet" type="text/css">
+        <link href="css/discography.css" rel="stylesheet" type="text/css">
+    </head>    
+    <body>
+    <nav>
+        <ul class="navbar">
+            <li><a class="img"> <img src="images/Akatsuki_top_big.jpg" alt="akatsuki image"></a></li>
+            <li><a class="text" href="index.html">Home</a></li>
+            <li><a class="text" href="about.html">About</a></li>
+            <li><a class="text" href="videos.html">Videos</a></li>
+            <li><a class="text" href="works.html">Works</a></li>
+            <li><a class="text" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>  
+        <div class="title"> 
+            <div class="box"> </div>
+            <h1> Discography </h1>
+        </div>
+        <div class="line"></div> 
+        <div id="filter">
+            <label> Year:</label>
+            <select id="yearFilter">
+                <option value="all">All</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+              </select>
+            <label> Type:</label>
+              <select id="typeFilter">
+                <option value="all">All Items</option>
+                <option value="albums">Albums</option>
+                <option value="singles">Singles</option>
+                <option value="cds">CDs</option>
+              </select>
+          </div>
+          
+          <div id="list">
+
+          </div>
+          <script src="js/year.js"></script>
+    </main>
+    <footer>
+        <div class="footer">
+            Copyright (C) 2023 暁Records. All Rights Reserved.
+        </div>
+    </footer>
+    </body>
+</html>     

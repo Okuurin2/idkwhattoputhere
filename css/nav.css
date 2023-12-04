@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Rockwell');
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    margin: 0 0 10%;
+    padding: 0 0 5px;
+    overflow: hidden;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:100px;
+    justify-content: space-between;
+    z-index: 10;
+  }
+  
+  .navbar li {
+    display: flex;
+    float: left;
+    width: 16.4%;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  li a{
+      display: flex ;
+      align-items: center;
+  }
+
+  li a.img {
+    background-color: #FFFFFF;
+    pointer-events: none;
+  }
+  
+  li a.text {    
+    float:left;
+    height: auto;
+    width: 100%;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12% 0;
+    text-decoration: none;
+    background-color: #DDDDDD;
+    font-size: 1.5em;
+    font-family:Rockwell;
+  }
+  
+  li a:hover {
+    background-color: #888888;
+  }
+
+  @media screen and (max-width: 800px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar{
+      height: 50px;
+    }
+
+    li a.text{
+      font-size: .8em;
+    }
+}

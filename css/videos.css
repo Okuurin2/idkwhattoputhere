@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Rockwell');
+
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75),  rgba(255, 255, 255, 0.75))  , url("../images/Akatsuki_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+h1{
+    font-size: 200%;
+    color:black;
+    font-family:Rockwell;
+    margin: 0;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  margin: 120px 2%;
+}
+
+#youtube{
+    display: flex;
+    padding: 20px;
+    width: 100%;  
+    border: 2px solid black;
+    border-radius: 50px;
+    align-items: center;
+  }
+  
+  .ch_logo{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 0px; 
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0;  
+  }
+  
+  .ch_logo img{
+    border-radius: 50%;
+    border: 2px solid darkgrey;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+  
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #channelThumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  .channel,
+  .vidcontainer {
+    width: 47%;
+    box-sizing: border-box;
+  }
+
+  .title {
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    min-height: 50px;
+  }
+  
+  .box {
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+.vidcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.video{
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  background-color: black; 
+  height: 2px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.vidcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#popularVideos, #recentVideos{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  border: 2px solid black;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  height: 2%;
+  background-color: rgb(228, 228, 228);
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  main{
+    margin: 60px 2%;
+  }
+
+  .top{
+    flex-direction: column;
+  }
+
+  .channel, .vidcontainer{
+    width: 100%;
+  }
+
+  #popularVideos, #recentVideos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border: 2px solid black;
+  }
+
+  #youtube{
+    width: 92%;
+  }
+}
